@@ -93,6 +93,8 @@ def run_mcp_stdio():
 
 
 def run_mcp_sse(host: str, port: int):
+    mcp_app.settings.host = host
+    mcp_app.settings.port = port
     mcp_app.run("sse")
 
 
